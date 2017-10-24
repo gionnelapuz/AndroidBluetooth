@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/txtDeviceAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDeviceName"/>
+
+    <Button
+        android:id="@+id/btnPair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAIR"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txtAlreadyPaired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAIRED"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtDeviceName"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

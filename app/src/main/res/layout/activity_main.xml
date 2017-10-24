@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.gin.bluetooth.MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <Button
+           android:id="@+id/btnEnable"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="ENABLE"/>
+       <Button
+           android:id="@+id/btnDisable"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="DISABLE"
+           android:visibility="gone"/>
+   </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnViewPaired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW PAIRED"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SCAN DEVICES"/>
+    <Button
+        android:id="@+id/btnSetVisibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MAKE DEVICE VISIBLE"/>
+</LinearLayout>

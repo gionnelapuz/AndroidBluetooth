@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gin.bluetooth.pairedDeviceActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="LIST OF PAIRED DEVICES" />
+
+    <ListView
+        android:id="@+id/listViewPaired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#000"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="20dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/txtEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NO PAIRED DEVICES"
+            android:layout_centerInParent="true"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
